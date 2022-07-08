@@ -1,5 +1,11 @@
-:root {
-  --primary-color: #23232e;
-  --secondary-color: aquamarine;
-  --white: #f5f5f5;
-}
+// colors
+$primary-color: #23232e;
+$secondary-color: aquamarine;
+$white: #fff;
+
+// definitions
+$container-size: 1280px;
+$transition-settings: 0.2s ease-out;
+$dropdown-transition-settings: 1s ease-out;
+$radius: 5px;
+$breakpoint: 768px;
