@@ -5,13 +5,12 @@ import { RouterModule } from '@angular/router';
 
 //components
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { PageComponent } from './components/page/page.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, PageComponent],
+  declarations: [HeaderComponent, PageComponent],
 
   imports: [CommonModule, RouterModule],
-  exports: [HeaderComponent, FooterComponent, PageComponent],
+  exports: [HeaderComponent, PageComponent],
 })
 export class SharedModule {}
