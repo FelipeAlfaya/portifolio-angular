@@ -1,13 +1,14 @@
+//modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
-//modules
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
+import { PagesRoutingModule } from './pages/pages.routing.module';
+import { AppRoutingModule } from './app-routing.module';
+
+//components
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
     PagesModule,
     SharedModule,
     RouterModule,
+    PagesRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
