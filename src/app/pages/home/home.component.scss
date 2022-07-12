@@ -1,7 +1,9 @@
 @import "../../../config-scss/main.scss";
 :host {
   .container {
-    margin-left: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: rem-calc(215);
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15rem;
@@ -10,16 +12,19 @@
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+
     img {
       border-radius: 50%;
       box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.26);
       border: 2px solid white;
     }
+
     img.displayed {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+
     .github {
       position: absolute;
       top: rem-calc(130);
@@ -47,6 +52,7 @@
     .github a:active {
       background-color: rgba(255, 255, 255, 0.5);
     }
+
     .linkedin {
       position: absolute;
       top: rem-calc(-0.5);
@@ -74,6 +80,7 @@
     .linkedin a:active {
       background-color: rgba(255, 255, 255, 0.5);
     }
+
     .contato {
       position: absolute;
       top: rem-calc(-0.5);
