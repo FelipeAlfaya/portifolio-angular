@@ -1,24 +1,30 @@
 @import "../../../config-scss/main.scss";
 :host {
   .container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: rem-calc(215);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 15rem;
-    height: 540%;
+    height: rem-calc(720);
     flex-direction: column;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    display: block;
 
     img {
       border-radius: 50%;
       box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.26);
       border: 2px solid white;
+      max-width: 304px;
+      max-height: 304px;
+      width: auto;
+      height: auto;
     }
+
     .botoes {
       .github {
         position: absolute;
@@ -117,19 +123,223 @@
     padding: 5px 10px;
     align-items: center;
   }
-}
+  @media (max-height: 875px) {
+    .container {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      backdrop-filter: blur(3px);
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 15rem;
+      height: rem-calc(500);
+      flex-direction: column;
+      border-radius: 20px;
+      justify-content: center;
 
-@media (max-height: 999px) {
-  .container {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    .perfil {
-      border-radius: 50%;
-      box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.26);
-      border: 2px solid white;
+      img {
+        box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.26);
+        border: 2px solid whitesmoke;
+        max-width: 202px;
+        max-height: 202px;
+        margin-top: rem-calc(-75);
+        margin-left: rem-calc(10);
+      }
+
+      .botoes {
+        .github {
+          position: absolute;
+          top: 20%;
+          left: 48%;
+          transform: translate(-20%, -50%);
+          margin: 0px;
+          padding: 0px;
+        }
+        .github a {
+          padding: 0px;
+          text-align: center;
+          background: url("../../../assets/Icons/github.svg") no-repeat center
+            center;
+          width: rem-calc(50);
+          height: rem-calc(50);
+          display: block;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 5px 10px;
+          transition: 0.2s;
+          //box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.2);
+        }
+        .github a:hover,
+        .contato a:hover,
+        .linkedin a:hover {
+          background-color: rgba(255, 255, 255, 0.25);
+        }
+        .github a:active,
+        .contato a:active,
+        .linkedin a:active {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .linkedin {
+          position: absolute;
+          top: 20%;
+          left: 18%;
+          transform: translate(-20%, -20%);
+          margin: 0px;
+          padding: 0px;
+        }
+        .linkedin a {
+          padding: 0px;
+          text-align: center;
+          background: url("../../../assets/Icons/linkedin.svg") no-repeat center
+            center;
+          width: rem-calc(50);
+          height: rem-calc(50);
+          display: block;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 5px 10px;
+          transition: 0.2s;
+          //box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.2);
+        }
+
+        .contato {
+          position: absolute;
+          top: 20%;
+          left: 78%;
+          transform: translate(-20%, -20%);
+          margin: 0px;
+          padding: 0px;
+        }
+        .contato a {
+          padding: 0px;
+          text-align: center;
+          background: url("../../../assets/Icons/email.svg") no-repeat center
+            center;
+          width: rem-calc(50);
+          height: rem-calc(50);
+          display: block;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 5px 10px;
+          transition: 0.2s;
+          //box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.2);
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .container {
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      backdrop-filter: blur(3px);
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 15rem;
+      height: rem-calc(500);
+      width: rem-calc(600);
+      flex-direction: column;
+      border-radius: 20px;
+      justify-content: center;
+
+      img {
+        box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.26);
+        border: 2px solid whitesmoke;
+        max-width: 202px;
+        max-height: 202px;
+        margin-top: rem-calc(-75);
+        margin-left: rem-calc(-40);
+      }
+
+      .botoes {
+        .github {
+          position: absolute;
+          top: 20%;
+          left: 48%;
+          transform: translate(-20%, -50%);
+          margin: 0px;
+          padding: 0px;
+        }
+        .github a {
+          padding: 0px;
+          text-align: center;
+          background: url("../../../assets/Icons/github.svg") no-repeat center
+            center;
+          width: rem-calc(50);
+          height: rem-calc(50);
+          display: block;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 5px 10px;
+          transition: 0.2s;
+          //box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.2);
+        }
+        .github a:hover,
+        .contato a:hover,
+        .linkedin a:hover {
+          background-color: rgba(255, 255, 255, 0.25);
+        }
+        .github a:active,
+        .contato a:active,
+        .linkedin a:active {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .linkedin {
+          position: absolute;
+          top: 20%;
+          left: 18%;
+          transform: translate(-20%, -20%);
+          margin: 0px;
+          padding: 0px;
+        }
+        .linkedin a {
+          padding: 0px;
+          text-align: center;
+          background: url("../../../assets/Icons/linkedin.svg") no-repeat center
+            center;
+          width: rem-calc(50);
+          height: rem-calc(50);
+          display: block;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 5px 10px;
+          transition: 0.2s;
+          //box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.2);
+        }
+
+        .contato {
+          position: absolute;
+          top: 20%;
+          left: 78%;
+          transform: translate(-20%, -20%);
+          margin: 0px;
+          padding: 0px;
+        }
+        .contato a {
+          padding: 0px;
+          text-align: center;
+          background: url("../../../assets/Icons/email.svg") no-repeat center
+            center;
+          width: rem-calc(50);
+          height: rem-calc(50);
+          display: block;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 5px 10px;
+          transition: 0.2s;
+          //box-shadow: 0 8px 32px 0 rgba(127, 255, 212, 0.2);
+        }
+      }
+      .title {
+        font-size: rem-calc(18);
+      }
+      .subtitle {
+        font-size: rem-calc(13);
+      }
     }
   }
 }

@@ -44,16 +44,16 @@
       }
     }
 
-    &--content {
+    /*&--content {
       position: relative;
       max-width: $container-size;
       margin: 0 auto;
       width: auto;
-      height: auto;
+      height: auto;*/
 
-      &--body {
-        padding: rem-calc(35);
-      }
+    &--body {
+      padding: rem-calc(35);
     }
   }
 }
+// }
