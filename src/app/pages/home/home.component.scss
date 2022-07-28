@@ -10,6 +10,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 15rem;
     height: rem-calc(720);
+    width: rem-calc(785);
     flex-direction: column;
     border-radius: 20px;
     align-items: center;
@@ -143,8 +144,8 @@
         border: 2px solid whitesmoke;
         max-width: 202px;
         max-height: 202px;
+        margin-left: rem-calc(50);
         margin-top: rem-calc(-75);
-        margin-left: rem-calc(10);
       }
 
       .botoes {

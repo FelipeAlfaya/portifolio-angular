@@ -7,6 +7,12 @@
     font-family: "Orbitron", sans-serif;
     color: $white;
     cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  .logo:hover {
+    color: $secondary-color;
+    transition: 0.2s;
   }
 
   a {
@@ -19,7 +25,8 @@
     color: $secondary-color;
   }
 
-  a:active {
+  a:active,
+  .logo:active {
     opacity: 0.7;
   }
 

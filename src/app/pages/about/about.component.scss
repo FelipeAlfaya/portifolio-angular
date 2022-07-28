@@ -1,3 +1,22 @@
-* {
-  color: #fff;
+@import "../../../config-scss/main.scss";
+:host {
+  .container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 15rem;
+    height: rem-calc(720);
+    width: rem-calc(785);
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    color: $white;
+  }
 }
