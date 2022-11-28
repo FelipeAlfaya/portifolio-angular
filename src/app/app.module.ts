@@ -6,7 +6,6 @@ import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { PagesRoutingModule } from './pages/pages.routing.module';
 import { AppRoutingModule } from './app-routing.module';
-
 //components
 import { AppComponent } from './app.component';
 
@@ -19,6 +18,7 @@ import { AppComponent } from './app.component';
     SharedModule,
     RouterModule,
     PagesRoutingModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
